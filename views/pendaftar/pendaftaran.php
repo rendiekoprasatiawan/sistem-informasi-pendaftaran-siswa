@@ -3,7 +3,7 @@
         <div class="container">
             <h4>FORMULIR PENDAFTARAN</h4>
             <hr>
-            <form action="../../controller/daftar.php" method="POST"  enctype="multipart/form-data">
+            <form action="../../controller/daftar.php" method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col">
                         <h5>BIODATA</h5>
@@ -85,14 +85,14 @@
                             <input type="file" name="ijazah" id="ijazah" required>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <hr>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="cek" required>
                     <label class="form-check-label" for="cek">Pastikan data data yang anda masukkan merupakan data yang asli dan tidak dibuat buat</label>
                 </div>
                 <hr>
-                <button class="btn btn-primary btn-block btn-lg mt-4" type="submit" name="daftar"><i class="fa fa-paper-plane"></i> Daftar</button>    
+                <button class="btn btn-primary btn-block btn-lg mt-4" type="submit" name="daftar"><i class="fa fa-paper-plane"></i> Daftar</button>
             </form>
         </div>
     </main>

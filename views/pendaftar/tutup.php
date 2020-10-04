@@ -68,12 +68,12 @@
     <!-- START CONTENT -->
     <main role="main" style="min-height:400px">
         <div class="container">
-        <div class="text-center mt-5 pt-5">
-            <h1>MAAF PENDAFTARAN SUDAH DITUTUP</h1>
-            <P>Batas waktu pendaftaran sudah habis</P>
-            <a href="../auth/login.php">kembali</a>
+            <div class="text-center mt-5 pt-5">
+                <h1>MAAF PENDAFTARAN SUDAH DITUTUP</h1>
+                <P>Batas waktu pendaftaran sudah habis</P>
+                <a href="../auth/login.php">kembali</a>
+            </div>
         </div>
-    </div>
     </main>
     <!-- END CONTENT -->
 
