@@ -69,7 +69,7 @@ CREATE TABLE `countdown` (
 --
 
 INSERT INTO `countdown` (`tanggal`) VALUES
-('2019-07-30');
+('2020-10-20');
 
 -- --------------------------------------------------------
 
@@ -110,7 +110,7 @@ CREATE TABLE `nilai_un` (
 --
 
 INSERT INTO `nilai_un` (`id_nilai`, `indo`, `mtk`, `inggris`, `ipa`, `jumlah`) VALUES
-(8, 88, 88, 89, 87, 352);
+(8, 80, 80, 80, 80, 320);
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,7 @@ CREATE TABLE `pendaftar` (
 --
 
 INSERT INTO `pendaftar` (`no_pendf`, `id`, `nama`, `kelamin`, `tgl_lhr`, `agama`, `alamat`, `id_berkas`, `id_nilai`, `status`) VALUES
-(2147483647, 2, 'Rendi Eko Prasatiawan', 'L', '1999-01-19', 'islam', 'Jl abc No. 123', 8, 8, 0);
+(2147483647, 2, 'data', 'L', '1999-01-19', 'islam', 'Jl. abc', 8, 8, 0);
 
 -- --------------------------------------------------------
 
