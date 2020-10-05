@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2020 at 11:59 AM
+-- Generation Time: Oct 05, 2020 at 01:19 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -41,7 +41,12 @@ CREATE TABLE `berkas` (
 --
 
 INSERT INTO `berkas` (`id_berkas`, `foto`, `kk`, `akta_lahir`, `ijazah`, `nilai_rapor`) VALUES
-(8, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 89);
+(8, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 89),
+(9, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 320),
+(10, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 320),
+(11, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 320),
+(12, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 320),
+(13, 'Rendi Eko Prasatiawan.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 320);
 
 -- --------------------------------------------------------
 
@@ -110,7 +115,12 @@ CREATE TABLE `nilai_un` (
 --
 
 INSERT INTO `nilai_un` (`id_nilai`, `indo`, `mtk`, `inggris`, `ipa`, `jumlah`) VALUES
-(8, 80, 80, 80, 80, 320);
+(8, 80, 80, 80, 80, 320),
+(9, 80, 80, 80, 80, 320),
+(10, 80, 80, 80, 80, 320),
+(11, 80, 80, 80, 80, 320),
+(12, 80, 80, 80, 80, 320),
+(13, 80, 80, 80, 80, 320);
 
 -- --------------------------------------------------------
 
@@ -119,7 +129,7 @@ INSERT INTO `nilai_un` (`id_nilai`, `indo`, `mtk`, `inggris`, `ipa`, `jumlah`) V
 --
 
 CREATE TABLE `pendaftar` (
-  `no_pendf` int(11) NOT NULL,
+  `no_pendf` bigint(11) NOT NULL,
   `id` int(11) NOT NULL,
   `nama` varchar(25) NOT NULL,
   `kelamin` enum('L','P') NOT NULL,
@@ -136,7 +146,9 @@ CREATE TABLE `pendaftar` (
 --
 
 INSERT INTO `pendaftar` (`no_pendf`, `id`, `nama`, `kelamin`, `tgl_lhr`, `agama`, `alamat`, `id_berkas`, `id_nilai`, `status`) VALUES
-(2147483647, 2, 'data', 'L', '1999-01-19', 'islam', 'Jl. abc', 8, 8, 0);
+(2147483647, 2, 'data', 'L', '1999-01-19', 'islam', 'Jl. abc', 8, 8, 0),
+(201005011046, 4, 'coba', 'L', '2020-10-05', 'jkl', 'islam', 13, 13, 0),
+(201005121037, 4, 'coba', 'L', '2020-10-05', 'jkl', 'islam', 12, 12, 0);
 
 -- --------------------------------------------------------
 
@@ -158,7 +170,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `nama`, `email`, `password`, `id_level`) VALUES
 (1, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1),
-(2, 'Rendi Eko Prasatiawan', 'rendi@gmail.com', '202cb962ac59075b964b07152d234b70', 2);
+(2, 'Rendi Eko Prasatiawan', 'rendi@gmail.com', '202cb962ac59075b964b07152d234b70', 2),
+(3, 'coba', 'coba123@gmail.com', '202cb962ac59075b964b07152d234b70', 2),
+(4, 'data', 'data123@gmail.com', '202cb962ac59075b964b07152d234b70', 2);
 
 --
 -- Indexes for dumped tables
@@ -205,7 +219,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
-  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `level`
@@ -217,13 +231,13 @@ ALTER TABLE `level`
 -- AUTO_INCREMENT for table `nilai_un`
 --
 ALTER TABLE `nilai_un`
-  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
