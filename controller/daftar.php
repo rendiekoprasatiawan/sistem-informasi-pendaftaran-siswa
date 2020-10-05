@@ -34,7 +34,7 @@ $querynilai = mysqli_query($connect, "INSERT INTO nilai_un VALUES('0', '$indo', 
 $idnilai = mysqli_insert_id($connect);
 $querypendaftar = mysqli_query($connect, "INSERT INTO pendaftar VALUES('$no_pendf','$id', '$nama', '$kelamin', '$tgllhr', '$alamat', '$agama', '$idberkas', '$idnilai', '0')");
 
-if ($queryberkas || $querynilai || $querypendaftar) {
+if ($queryberkas and $querynilai and $querypendaftar) {
     move_uploaded_file($tmp_foto, '../berkas/' . $nama_foto);
     move_uploaded_file($tmp_kk, '../berkas/' . $nama_kk);
     move_uploaded_file($tmp_akta, '../berkas/' . $nama_akta);
